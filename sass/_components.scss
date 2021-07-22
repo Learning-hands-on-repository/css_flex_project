@@ -363,9 +363,13 @@
   box-shadow: var(--shadow-light);
   padding: 3rem;
   margin-bottom: 3.5rem;
+  position: relative;
+  overflow: hidden;
 
   &__text {
     margin-bottom: 2rem;
+    z-index: 10;
+    position: relative;
   }
 
   &__user {
@@ -396,5 +400,17 @@
   &__rating {
     color: var(--color-primary);
     font-size: 2rem;
+  }
+
+  &::before {
+    content: "\201C";
+    position: absolute;
+    top: -3rem;
+    left: -1rem;
+    line-height: 1;
+    font-size: 20rem;
+    color: var(--color-grey-light-2);
+    font-family: sans-serif;
+    z-index: 1;
   }
 }
