@@ -356,3 +356,45 @@
     }
   }
 }
+
+//////////////////////////// Review
+.review {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+
+  &__text {
+    margin-bottom: 2rem;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+  }
+
+  &__photo {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+  }
+
+  &__user-box {
+    margin-right: auto;
+  }
+
+  &__user-name {
+    font-weight: 500;
+  }
+
+  &__user-date {
+    font-weight: 100;
+    font-size: 1rem;
+  }
+
+  &__rating {
+    color: var(--color-primary);
+    font-size: 2rem;
+  }
+}
